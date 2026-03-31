@@ -1,0 +1,9 @@
+[project]
+name = "circling-square-demo"
+version = "0.1.0"
+description = "Flies 8 Crazyflies in circular Bezier-curve trajectories arranged in a square formation, with synchronized color-shifting LED ring effects."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "numpy",
+]

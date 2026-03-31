@@ -1,0 +1,8 @@
+[project]
+name = "position-commander-demo"
+version = "0.1.0"
+description = "Demonstrates position-based flight control using the PositionHlCommander class, including going to coordinates, relative moves, and landing on elevated surfaces."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]
