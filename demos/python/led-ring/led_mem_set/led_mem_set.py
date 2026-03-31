@@ -21,14 +21,6 @@
 #  GNU General Public License for more details.
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#   "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.30",
-# ]
-# ///
-
 """
 Simple example that connects to the crazyflie at `URI` and writes to
 the LED memory so that individual leds in the LED-ring can be set,

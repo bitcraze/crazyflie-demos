@@ -22,13 +22,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#   "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-# ]
-# ///
-
 """
 Simple example that connects to the first Crazyflie found, ramps up/down
 the motors and disconnects.
@@ -43,7 +36,6 @@ from cflib.utils import uri_helper
 uri = uri_helper.uri_from_env(default='radio://0/80/2M/E7E7E7E7E7')
 
 logging.basicConfig(level=logging.ERROR)
-
 
 class MotorRampExample:
     """Example that connects to a Crazyflie and ramps the motors up/down and
@@ -113,7 +105,6 @@ class MotorRampExample:
 
     def disconnect(self):
         self._cf.close_link()
-
 
 if __name__ == '__main__':
     # Initialize the low-level drivers

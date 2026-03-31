@@ -19,14 +19,6 @@
 #  GNU General Public License for more details.
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
-
-# /// script
-# requires-python = ">=3.10"
-# dependencies = [
-#   "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-# ]
-# ///
-
 """
 Simple example that connects to one crazyflie (check the address at the top
 and update it to your crazyflie address) and uses the high level commander

@@ -1,0 +1,8 @@
+[project]
+name = "led-mem-set"
+version = "0.1.0"
+description = "Connects to a Crazyflie and sets individual LEDs on the LED-ring deck by writing directly to LED memory."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.30",
+]
