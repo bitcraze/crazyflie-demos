@@ -4,11 +4,10 @@ Flies the Crazyflie in a grid pattern while changing its LED ring color to match
 
 ## What You Need
 
-- **Crazyflie platform** with LED ring deck
+- **Crazyflie platform**
 - **Crazyradio**
-- An absolute positioning system (e.g., Lighthouse)
-- A camera capable of long-exposure shots
-- A dark room
+- **Positioning system**
+- **LED-ring deck**
 
 ## Quick Start
 
@@ -33,8 +32,8 @@ The demo showcases:
 
 ## Files
 
-- `matrix_light_printer.py` — main script
-- `monalisa.png` — sample source image
+- `matrix_light_printer.py` - main script
+- `monalisa.png` - sample source image
 
 ## Dependencies
 

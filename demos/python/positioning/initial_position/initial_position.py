@@ -22,7 +22,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 """
-Simple example that connects to one crazyflie, sets the initial position/yaw
+Simple example that connects to one Crazyflie, sets the initial position/yaw
 and flies a trajectory.
 
 The initial pose (x, y, z, yaw) is configured in a number of variables and

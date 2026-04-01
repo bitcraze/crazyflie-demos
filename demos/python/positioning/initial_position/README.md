@@ -6,7 +6,7 @@ Demonstrates how to set the Crazyflie's initial position and yaw in the Kalman e
 
 - **Crazyflie platform**
 - **Crazyradio**
-- An absolute positioning system (e.g., Lighthouse, LPS, or motion capture)
+- **Absolute positioning system**
 
 ## Quick Start
 

@@ -6,7 +6,7 @@ Flies a figure-8 pattern using hover setpoints with the Flow deck or Lighthouse 
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Flow deck v2** or **Lighthouse positioning system**
+- **Flow deck v2 or Lighthouse positioning system**
 
 ## Quick Start
 
@@ -30,7 +30,6 @@ When you run the demo:
 The demo showcases:
 - Using the low-level hover setpoint commander (`send_hover_setpoint`)
 - Combining forward velocity and yaw rate to trace curved paths
-- Using `reset_estimator` to ensure the Kalman filter has converged before flight
 
 ## Dependencies
 

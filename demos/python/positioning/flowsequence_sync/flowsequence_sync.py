@@ -22,9 +22,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 """
-Simple example that connects to the crazyflie at `URI` and runs a figure 8
+Simple example that connects to the Crazyflie at `URI` and runs a figure 8
 sequence. This script requires some kind of location system, it has been
-tested with the flow deck and the lighthouse positioning system.
+tested with the Flow deck and the Lighthouse positioning system.
 
 Change the URI variable to your Crazyflie configuration.
 """
