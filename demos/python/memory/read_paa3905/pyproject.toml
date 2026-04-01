@@ -1,0 +1,9 @@
+[project]
+name = "read-paa3905"
+version = "0.1.0"
+description = "Reads the 35x35 pixel optical flow image from the PAA3905 sensor (Flow deck v2) and displays it as a live grayscale image using matplotlib."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "matplotlib",
+]

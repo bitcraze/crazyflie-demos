@@ -1,0 +1,8 @@
+[project]
+name = "basiclog-sync"
+version = "0.1.0"
+description = "Connects to the Crazyflie using SyncCrazyflie and SyncLogger, logs stabilizer roll/pitch/yaw at 10 ms intervals in a simple iterator loop for 10 seconds, then exits."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

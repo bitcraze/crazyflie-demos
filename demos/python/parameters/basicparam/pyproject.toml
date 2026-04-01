@@ -1,0 +1,8 @@
+[project]
+name = "basicparam"
+version = "0.1.0"
+description = "Connects to a Crazyflie, downloads all parameters, prints their values, modifies one parameter, and reads it back — demonstrating the cflib parameter callback API."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

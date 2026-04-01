@@ -1,0 +1,8 @@
+[project]
+name = "sbs-swarm"
+version = "0.1.0"
+description = "A step-by-step tutorial demonstrating how to use the Swarm class to control four Crazyflies: LED check, take-off, per-drone relative sequences, and landing."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

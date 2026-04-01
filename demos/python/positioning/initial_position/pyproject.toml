@@ -1,0 +1,8 @@
+[project]
+name = "initial-position"
+version = "0.1.0"
+description = "Demonstrates how to set the Crazyflie's initial position and yaw in the Kalman estimator before take-off, then fly a trajectory relative to that starting pose."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

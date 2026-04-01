@@ -1,0 +1,9 @@
+[project]
+name = "mocap-swarm-multi-commander"
+version = "0.1.0"
+description = "Connects to a motion capture system and feeds positions to multiple Crazyflies, each flying a different trajectory using either the PositionHlCommander or the MotionCommander."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "motioncapture",
+]

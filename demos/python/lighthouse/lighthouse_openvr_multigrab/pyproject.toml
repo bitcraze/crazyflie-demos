@@ -1,0 +1,9 @@
+[project]
+name = "lighthouse-openvr-multigrab"
+version = "0.1.0"
+description = "Controls two Crazyflies simultaneously with a single SteamVR controller: the trigger grabs the nearest drone and moves it, while the other holds its position."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "openvr",
+]

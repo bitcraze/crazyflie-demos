@@ -1,0 +1,8 @@
+[project]
+name = "lighthouse-mass-upload"
+version = "0.1.0"
+description = "Connects to multiple Crazyflies in sequence and uploads a shared lighthouse.yaml configuration file to each, then powers down each drone after a successful upload."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

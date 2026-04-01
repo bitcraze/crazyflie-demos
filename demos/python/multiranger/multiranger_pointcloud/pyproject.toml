@@ -1,0 +1,11 @@
+[project]
+name = "multiranger-pointcloud"
+version = "0.1.0"
+description = "Flies the Crazyflie in a hover and renders a live 3D point cloud from the Multiranger deck's distance sensors in a PyQt6/VisPy window."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "numpy",
+    "vispy",
+    "PyQt6",
+]

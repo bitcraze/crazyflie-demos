@@ -1,0 +1,8 @@
+[project]
+name = "read-deck-mem"
+version = "0.1.0"
+description = "Reads and prints all deck memory entries from the Crazyflie, including deck capabilities (read/write support, firmware upgrade info) and the first 10 bytes of each readable deck memory."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]
