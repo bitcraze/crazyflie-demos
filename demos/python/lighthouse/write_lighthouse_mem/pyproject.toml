@@ -1,8 +1,0 @@
-[project]
-name = "write-lighthouse-mem"
-version = "0.1.0"
-description = "Writes example Lighthouse base station geometry and calibration data directly into the Crazyflie's memory using hardcoded values."
-requires-python = ">=3.10"
-dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-]

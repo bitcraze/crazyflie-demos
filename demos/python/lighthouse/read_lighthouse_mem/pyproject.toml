@@ -1,8 +1,0 @@
-[project]
-name = "read-lighthouse-mem"
-version = "0.1.0"
-description = "Reads and prints the Lighthouse base station geometry and calibration data stored in the Crazyflie's memory."
-requires-python = ">=3.10"
-dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-]
