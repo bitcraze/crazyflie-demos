@@ -4,9 +4,9 @@ A step-by-step tutorial demonstrating how to use the `Swarm` class to control fo
 
 ## What You Need
 
-- **4 Crazyflie platforms** (or fewer — comment out URIs in the `uris` list)
-- **Crazyradio** (all four must be on the same channel)
-- An absolute positioning system (e.g., Lighthouse)
+- **4 Crazyflie platforms**
+- **Crazyradio**
+- **Flow deck v2 or Positioning system**
 
 ## Quick Start
 

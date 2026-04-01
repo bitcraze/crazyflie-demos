@@ -28,6 +28,11 @@ from cflib.crazyflie.swarm import CachedCfFactory
 from cflib.crazyflie.swarm import Swarm
 from cflib.crazyflie.syncCrazyflie import SyncCrazyflie
 
+URI1 = 'radio://0/80/2M/E7E7E7E701'
+URI2 = 'radio://0/80/2M/E7E7E7E702'
+URI3 = 'radio://0/80/2M/E7E7E7E703'
+URI4 = 'radio://0/80/2M/E7E7E7E704'
+
 def activate_led_bit_mask(scf: SyncCrazyflie):
     scf.cf.param.set_value('led.bitmask', 255)
 
@@ -77,10 +82,10 @@ def run_square_sequence(scf: SyncCrazyflie):
     time.sleep(flight_time)
 
 uris = [
-    'radio://0/20/2M/E7E7E7E701',
-    'radio://0/20/2M/E7E7E7E702',
-    'radio://0/20/2M/E7E7E7E703',
-    'radio://0/20/2M/E7E7E7E704',
+    URI1,
+    URI2,
+    URI3,
+    URI4,
     # Add more URIs if you want more copters in the swarm
     # URIs in a swarm using the same radio must also be on the same channel
 ]
@@ -126,10 +131,10 @@ sequence3 = [
 ]
 
 seq_args = {
-    uris[0]: [sequence0],
-    uris[1]: [sequence1],
-    uris[2]: [sequence2],
-    uris[3]: [sequence3],
+    URI1: [sequence0],
+    URI2: [sequence1],
+    URI3: [sequence2],
+    URI4: [sequence3],
 }
 
 def run_sequence(scf: SyncCrazyflie, sequence):

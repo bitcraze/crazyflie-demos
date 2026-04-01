@@ -6,7 +6,7 @@ A step-by-step tutorial demonstrating three flight modes with the `MotionCommand
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Flow deck v2** (required — the script checks for deck attachment before flying)
+- **Flow deck v2**
 
 ## Quick Start
 
