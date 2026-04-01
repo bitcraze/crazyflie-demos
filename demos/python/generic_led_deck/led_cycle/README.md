@@ -1,12 +1,12 @@
 # LED Cycle
 
-Continuously cycles through all hues on the Generic LED deck by converting HSV colors to RGB and writing them via the `led_deck_ctrl.rgb888` parameter.
+Continuously cycles through all hues on any LED deck by converting HSV colors to RGB and writing them via the `led_deck_ctrl.rgb888` parameter.
 
 ## What You Need
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Generic LED deck**
+- **Color LED deck or LED-ring deck**
 
 ## Quick Start
 

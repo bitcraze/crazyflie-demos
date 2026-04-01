@@ -1,7 +1,7 @@
 [project]
 name = "led-cycle"
 version = "0.1.0"
-description = "Continuously cycles through all hues on the Generic LED deck by converting HSV colors to RGB and writing them via the led_deck_ctrl.rgb888 parameter."
+description = "Continuously cycles through all hues on any LED deck by converting HSV colors to RGB and writing them via the led_deck_ctrl.rgb888 parameter."
 requires-python = ">=3.10"
 dependencies = [
     "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
