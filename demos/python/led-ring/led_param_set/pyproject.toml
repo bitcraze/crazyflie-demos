@@ -1,7 +1,7 @@
 [project]
 name = "led-param-set"
 version = "0.1.0"
-description = "Demonstrates controlling the LED-ring deck by setting ring.* parameters directly — including solid color and fade-to-color effects."
+description = "Demonstrates controlling the LED-ring deck by setting ring group parameters directly - including solid color and fade-to-color effects."
 requires-python = ">=3.10"
 dependencies = [
     "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",

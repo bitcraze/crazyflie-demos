@@ -1,6 +1,6 @@
 # LED Ring Parameter Set
 
-Demonstrates controlling the LED-ring deck by setting `ring.*` parameters directly — including solid color and fade-to-color effects.
+Demonstrates controlling the LED-ring deck by setting `ring.*` parameters directly - including solid color and fade-to-color effects.
 
 ## What You Need
 
