@@ -51,16 +51,16 @@ from cflib.crazyflie.swarm import Swarm
 
 # Change uris and sequences according to your setup
 # URIs in a swarm using the same radio must also be on the same channel
-URI1 = 'radio://0/70/2M/E7E7E7E701'
-URI2 = 'radio://0/70/2M/E7E7E7E702'
-URI3 = 'radio://0/70/2M/E7E7E7E703'
-URI4 = 'radio://0/70/2M/E7E7E7E704'
-URI5 = 'radio://0/70/2M/E7E7E7E705'
-URI6 = 'radio://0/70/2M/E7E7E7E706'
-URI7 = 'radio://0/70/2M/E7E7E7E707'
-URI8 = 'radio://0/70/2M/E7E7E7E708'
-URI9 = 'radio://0/70/2M/E7E7E7E709'
-URI10 = 'radio://0/70/2M/E7E7E7E70A'
+URI1 = 'radio://0/80/2M/E7E7E7E701'
+URI2 = 'radio://0/80/2M/E7E7E7E702'
+URI3 = 'radio://0/80/2M/E7E7E7E703'
+URI4 = 'radio://0/80/2M/E7E7E7E704'
+URI5 = 'radio://0/80/2M/E7E7E7E705'
+URI6 = 'radio://0/80/2M/E7E7E7E706'
+URI7 = 'radio://0/80/2M/E7E7E7E707'
+URI8 = 'radio://0/80/2M/E7E7E7E708'
+URI9 = 'radio://0/80/2M/E7E7E7E709'
+URI10 = 'radio://0/80/2M/E7E7E7E70A'
 
 z0 = 0.4
 z = 1.0

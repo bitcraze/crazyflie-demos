@@ -5,8 +5,8 @@ Flies 5 Crazyflies in a formation where four drones orbit in a circle around a s
 ## What You Need
 
 - **5 Crazyflie platforms**
-- **Crazyradio** (drones use different channels; see `uris`)
-- **Flow deck** on each Crazyflie
+- **Crazyradio**
+- **Flow deck v2 or Positioning system**
 
 ## Starting Positions
 

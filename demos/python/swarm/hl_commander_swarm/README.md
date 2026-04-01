@@ -4,9 +4,9 @@ Flies a swarm of Crazyflies in a synchronous square choreography using the high 
 
 ## What You Need
 
-- **2+ Crazyflie platforms** (URIs must be on the same radio channel)
+- **2 Crazyflie platforms**
 - **Crazyradio**
-- An absolute positioning system (e.g., Lighthouse, LPS)
+- **Positioning system**
 
 ## Quick Start
 
@@ -25,7 +25,7 @@ When you run the demo:
    - Take off to 1.0 m
    - Fly a 1 m square (four `go_to` commands, each 2 s)
    - Land
-5. **Stop** - Sends stop command
+5. **Land**
 
 The demo showcases:
 - Sharing the same flight function across all drones with `parallel_safe()`

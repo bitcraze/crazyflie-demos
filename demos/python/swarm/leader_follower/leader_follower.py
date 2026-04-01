@@ -72,11 +72,6 @@ uris = {
     URI2,
 }
 
-def wait_for_param_download(scf):
-    while not scf.cf.param.is_updated:
-        time.sleep(1.0)
-    print('Parameters downloaded for', scf.cf.link_uri)
-
 def arm(scf):
     scf.cf.platform.send_arming_request(True)
     time.sleep(1.0)
@@ -131,17 +126,18 @@ def leader_follower(scf):
     with MotionCommander(scf, default_height=DEFAULT_HEIGHT) as mc:
 
         # The follower turns until it is aligned with the global coordinate system
-        while abs(yaw1[-1]) > 2:
+        while abs(yaw1[-1]) > math.radians(5):
             if scf.__dict__['_link_uri'] == URI1:  # Follower
                 if yaw1[-1] > 0:
-                    mc.start_turn_right(36 if abs(yaw1[-1]) > 15 else 9)
+                    mc.start_turn_right(36 if abs(yaw1[-1]) > math.radians(15) else 9)
                 elif yaw1[-1] < 0:
-                    mc.start_turn_left(36 if abs(yaw1[-1]) > 15 else 9)
+                    mc.start_turn_left(36 if abs(yaw1[-1]) > math.radians(15) else 9)
 
             elif scf.__dict__['_link_uri'] == URI2:  # Leader
                 mc.stop()
-            time.sleep(0.005)
+            time.sleep(0.01)
 
+        mc.stop()
         time.sleep(0.5)
 
         start_time = time.time()
@@ -174,7 +170,7 @@ def leader_follower(scf):
                 else:
                     mc.stop()
 
-            time.sleep(0.005)
+            time.sleep(0.01)
         mc.land()
 
 if __name__ == '__main__':
@@ -186,11 +182,6 @@ if __name__ == '__main__':
         swarm.reset_estimators()
 
         swarm.parallel_safe(arm)
-
-        print('Waiting for parameters to be downloaded...')
-        swarm.parallel_safe(wait_for_param_download)
-
-        time.sleep(1)
 
         swarm.parallel_safe(start_position_printing)
         time.sleep(0.5)

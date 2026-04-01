@@ -29,10 +29,8 @@ The swarm takes off and flies an asynchronous choreography before landing.
 All movements are relative to the starting position.
 During the flight, the position of each Crazyflie is printed.
 
-This example is intended to work with any kind  of location system, it has
-been tested with the flow deck v2 and the lighthouse positioning system.
-Not using an absolute positioning system makes every Crazyflie start its
-positioning printing with (0,0,0) as its initial position.
+This example is intended to work with any kind  of positioning system, it has
+been tested with the Flow deck v2 and the Lighthouse positioning system.
 
 This example aims at documenting how to use the motion commander together
 with the Swarm class to achieve asynchronized sequences.
@@ -61,10 +59,6 @@ uris = {
     URI2,
 }
 
-def wait_for_param_download(scf):
-    while not scf.cf.param.is_updated:
-        time.sleep(1.0)
-    print('Parameters downloaded for', scf.cf.link_uri)
 
 def arm(scf):
     scf.cf.platform.send_arming_request(True)
@@ -138,10 +132,7 @@ if __name__ == '__main__':
 
         swarm.reset_estimators()
 
-        print('Waiting for parameters to be downloaded...')
-        swarm.parallel_safe(wait_for_param_download)
-
-        time.sleep(1)
+        time.sleep(0.5)
 
         swarm.parallel_safe(start_position_printing)
         time.sleep(0.1)

@@ -75,8 +75,8 @@ def run_shared_sequence(scf):
     commander.stop()
 
 uris = {
-    'radio://0/30/2M/E7E7E7E711',
-    'radio://0/30/2M/E7E7E7E712',
+    'radio://0/80/2M/E7E7E7E7E7',
+    'radio://0/80/2M/E7E7E7E7E8',
     # Add more URIs if you want more copters in the swarm
     # URIs in a swarm using the same radio must also be on the same channel
 }

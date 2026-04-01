@@ -4,9 +4,10 @@ Flies 3 Crazyflies in a tightly synchronized choreography where a central contro
 
 ## What You Need
 
-- **3 Crazyflie platforms** (with LED ring deck for color commands)
-- **Crazyradio** (all on channel 10)
-- An absolute positioning system (e.g., Lighthouse, LPS)
+- **3 Crazyflie platforms**
+- **Crazyradio**
+- **Positioning system**
+- **LED-ring deck**
 
 ## Quick Start
 
@@ -33,10 +34,6 @@ The demo showcases:
 - A queue-based architecture for deterministic step-synchronized swarm control
 - Mixing Arm, Takeoff, Goto, Land, and Ring commands in a single sequence table
 - Using the LED ring `fadeColor` and `fadeTime` parameters for color effects
-
-## Sequence Format
-
-Each entry is `(step, cf_id, command)`. All entries with `step <= current_step` are dispatched before advancing to the next step.
 
 ## Dependencies
 

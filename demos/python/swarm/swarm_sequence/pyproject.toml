@@ -1,7 +1,7 @@
 [project]
 name = "swarm-sequence"
 version = "0.1.0"
-description = "Flies 10 Crazyflies in a grid formation where each drone follows its own absolute position sequence — ascending to 1 m, hovering for 30 s, then descending."
+description = "Flies 10 Crazyflies in a grid formation where each drone follows its own absolute position sequence - ascending to 1 m, hovering for 30 s, then descending."
 requires-python = ">=3.10"
 dependencies = [
     "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",

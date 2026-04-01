@@ -5,8 +5,8 @@ Flies two Crazyflies in a leader-follower scenario: the leader executes a pre-de
 ## What You Need
 
 - **2 Crazyflie platforms**
-- **Crazyradio** (both on the same channel)
-- **Lighthouse positioning system** (or another absolute positioning system)
+- **Crazyradio**
+- **Lighthouse positioning system**
 
 ## Quick Start
 

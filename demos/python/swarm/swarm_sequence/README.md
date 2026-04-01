@@ -1,12 +1,12 @@
 # Swarm Sequence
 
-Flies 10 Crazyflies in a grid formation where each drone follows its own absolute position sequence — ascending to 1 m, hovering for 30 s, then descending.
+Flies 10 Crazyflies in a grid formation where each drone follows its own absolute position sequence - ascending to 1 m, hovering for 30 s, then descending.
 
 ## What You Need
 
-- **10 Crazyflie platforms** (fewer can be used by commenting out URIs)
-- **Crazyradio** (all on channel 70)
-- An absolute positioning system (e.g., Lighthouse, LPS)
+- **10 Crazyflie platforms**
+- **Crazyradio**
+- **Positioning system**
 
 ## Starting Layout
 
@@ -21,7 +21,7 @@ y2   9       6      3
 
 y1   8       5      2
 
-y0   7               1
+y0   7              1
 ```
 
 ## Quick Start
@@ -41,8 +41,7 @@ When you run the demo:
 5. **Land** - Each drone lands using velocity world setpoints
 
 The demo showcases:
-- Scaling swarm connections to 10 Crazyflies on a single Crazyradio
-- Waiting for parameter downloads before commanding flight in a large swarm
+- Scaling swarm connections to 10 Crazyflies
 - Per-drone absolute position sequences via `args_dict`
 
 ## Dependencies
