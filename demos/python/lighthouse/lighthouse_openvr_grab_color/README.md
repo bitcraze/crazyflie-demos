@@ -6,8 +6,8 @@ Extends the OpenVR grab demo with LED ring color control: the controller touchpa
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Lighthouse deck**
-- **LED-ring deck** (optional but recommended)
+- **Lighthouse positioning system**
+- **LED-ring deck**
 - **SteamVR-compatible controller** (e.g. Valve Index, HTC Vive)
 - SteamVR running on the host
 

@@ -6,7 +6,7 @@ Controls two Crazyflies simultaneously with a single SteamVR controller: the tri
 
 - **2 x Crazyflie platform**
 - **Crazyradio**
-- **Lighthouse deck** on each Crazyflie
+- **Lighthouse positioning system**
 - **SteamVR-compatible controller or tracker**
 - SteamVR running on the host
 

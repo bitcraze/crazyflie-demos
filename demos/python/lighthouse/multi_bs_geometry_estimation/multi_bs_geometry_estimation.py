@@ -410,7 +410,7 @@ if __name__ == '__main__':
     # Initialize the low-level drivers
     cflib.crtp.init_drivers()
 
-    uri = uri_helper.uri_from_env(default='radio://0/30/2M/E7E7E7E7AA')
+    uri = uri_helper.uri_from_env(default='radio://0/80/2M/E7E7E7E7E7')
 
     # Set a file name to write the measurement data to file. Useful for debugging
     file_name = None

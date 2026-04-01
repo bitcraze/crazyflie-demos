@@ -1,7 +1,29 @@
-#!/usr/bin/env python3
-# Demo that makes one Crazyflie take off 30cm above the first controller found
-# Using the controller trigger it is then possible to 'grab' the Crazyflie
-# and to make it move.
+# -*- coding: utf-8 -*-
+#
+# ,---------,       ____  _ __
+# |  ,-^-,  |      / __ )(_) /_______________ _____  ___
+# | (  O  ) |     / __  / / __/ ___/ ___/ __ `/_  / / _ \
+# | / ,--'  |    / /_/ / / /_/ /__/ /  / /_/ / / /_/  __/
+#    +------`   /_____/_/\__/\___/_/   \__,_/ /___/\___/
+#
+# Copyright (C) 2026 Bitcraze AB
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, in version 3.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+"""
+Demo that makes one Crazyflie take off 30cm above the first controller found
+Using the controller trigger it is then possible to 'grab' the Crazyflie
+and to make it move.
+"""
 import sys
 import time
 
@@ -12,9 +34,10 @@ from cflib.crazyflie import Crazyflie
 from cflib.crazyflie.log import LogConfig
 from cflib.crazyflie.syncCrazyflie import SyncCrazyflie
 from cflib.utils.reset_estimator import reset_estimator
+from cflib.utils import uri_helper
 
 # URI to the Crazyflie to connect to
-uri = 'radio://0/80/2M/E7E7E7E7E7'
+URI = uri_helper.uri_from_env(default='radio://0/80/2M/E7E7E7E7E7')
 
 print('Opening')
 vr = openvr.init(openvr.VRApplication_Other)
@@ -119,7 +142,7 @@ def run_sequence(scf):
 if __name__ == '__main__':
     cflib.crtp.init_drivers()
 
-    with SyncCrazyflie(uri, cf=Crazyflie(rw_cache='./cache')) as scf:
+    with SyncCrazyflie(URI, cf=Crazyflie(rw_cache='./cache')) as scf:
         reset_estimator(scf)
 
         # Arm the Crazyflie

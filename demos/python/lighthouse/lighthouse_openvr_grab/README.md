@@ -6,7 +6,7 @@ Connects a Crazyflie to a SteamVR controller: the drone hovers 30 cm above the c
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Lighthouse deck**
+- **Lighthouse positioning system**
 - **SteamVR-compatible controller or tracker** (e.g. Valve Index, HTC Vive)
 - SteamVR running on the host
 

@@ -4,8 +4,9 @@ Connects to multiple Crazyflies in sequence and uploads a shared `lighthouse.yam
 
 ## What You Need
 
-- **Multiple Crazyflie platforms** (each with a Lighthouse deck)
+- **Crazyflie platform**
 - **Crazyradio**
+- **Lighthouse positioning deck**
 - A `lighthouse.yaml` file (exported from the Crazyflie client)
 
 ## Quick Start
@@ -40,3 +41,4 @@ The demo showcases:
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
   - ref: 0.1.31
+-extra: pyyaml

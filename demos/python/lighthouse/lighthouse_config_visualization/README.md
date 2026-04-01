@@ -25,11 +25,6 @@ When you run the demo:
 3. **Draw base stations** - For each base station: draws its local XYZ coordinate frame, a horizontal coverage sector (150 deg), and a vertical coverage sector (110 deg)
 4. **Display** - Opens a 3D matplotlib window with equal-aspect axes
 
-The demo showcases:
-- Parsing Lighthouse geometry YAML with PyYAML
-- 3D quiver plots and `plot_trisurf` for sector visualization
-- Equal-aspect 3D axis scaling
-
 ## Dependencies
 
 - firmware:

@@ -6,8 +6,7 @@ Interactive script that guides you through recording Lighthouse sweep angle meas
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Lighthouse deck** (v2 base stations required)
-- Lighthouse v2 base stations with calibration data already received by the Crazyflie
+- **Lighthouse positioning system**
 
 ## Quick Start
 
