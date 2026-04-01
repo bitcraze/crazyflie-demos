@@ -33,8 +33,8 @@ found here https://github.com/bitcraze/crazyflie-firmware/tree/master/examples/
 demos/app_wall_following_demo
 
 For the example to run the following hardware is needed:
- * Crazyflie 2.0
- * Crazyradio PA
+ * Crazyflie platform
+ * Crazyradio
  * Flow deck
  * Multiranger deck
 """

@@ -4,11 +4,10 @@ Flies the Crazyflie along a wall using a state-machine-based wall-following algo
 
 ## What You Need
 
-- **Crazyflie 2.0**
+- **Crazyflie platform**
 - **Crazyradio**
-- **Flow deck** (for hover stabilization)
+- **Flow deck**
 - **Multiranger deck**
-- A room with at least one straight wall
 
 ## Quick Start
 
@@ -28,14 +27,13 @@ When you run the demo:
 6. **Land** - The MotionCommander context manager lands automatically on exit
 
 The demo showcases:
-- A Python port of the C-based wall-following app from the Crazyflie firmware examples
 - Using `SyncLogger` to read yaw data synchronously inside the control loop
 - Combining `MotionCommander` velocity commands with yaw rate control
 
 ## Files
 
-- `multiranger_wall_following.py` — main entry point
-- `wall_following.py` — `WallFollowing` state machine class (helper module)
+- `multiranger_wall_following.py` - main entry point
+- `wall_following.py` - `WallFollowing` state machine class (helper module)
 
 ## Dependencies
 

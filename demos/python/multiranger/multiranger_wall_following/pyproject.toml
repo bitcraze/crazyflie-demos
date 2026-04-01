@@ -1,7 +1,7 @@
 [project]
 name = "multiranger-wall-following"
 version = "0.1.0"
-description = "Flies the Crazyflie along a wall using a state-machine-based wall-following algorithm driven by the Multiranger deck's distance sensors."
+description = "Flies the Crazyflie using a state-machine-based wall-following algorithm driven by the Multiranger deck's distance sensors."
 requires-python = ">=3.10"
 dependencies = [
     "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",

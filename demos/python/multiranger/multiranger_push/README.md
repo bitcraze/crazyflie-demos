@@ -4,9 +4,9 @@ Hover the Crazyflie and push it around with your hands — the Multiranger deck 
 
 ## What You Need
 
-- **Crazyflie 2.0**
+- **Crazyflie platform**
 - **Crazyradio**
-- **Flow deck** (for hover stabilization)
+- **Flow deck**
 - **Multiranger deck**
 
 ## Quick Start

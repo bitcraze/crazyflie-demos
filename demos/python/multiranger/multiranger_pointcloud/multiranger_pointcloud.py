@@ -43,14 +43,14 @@ The demo is ended by either closing the graph window.
 
 For the example to run the following hardware is needed:
  * Crazyflie 2.0
- * Crazyradio PA
+ * Crazyradio
  * Flow deck
  * Multiranger deck
 """
 import logging
 import math
 import sys
-from time import time
+import time
 
 import numpy as np
 from vispy import scene

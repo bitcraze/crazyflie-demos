@@ -4,9 +4,9 @@ Flies the Crazyflie in a hover and renders a live 3D point cloud from the Multir
 
 ## What You Need
 
-- **Crazyflie 2.0**
+- **Crazyflie platform**
 - **Crazyradio**
-- **Flow deck** (for hover stabilization)
+- **Flow deck**
 - **Multiranger deck**
 
 ## Quick Start

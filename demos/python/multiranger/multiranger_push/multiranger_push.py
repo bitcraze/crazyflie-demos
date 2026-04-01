@@ -34,8 +34,8 @@ The demo is ended by either pressing Ctrl-C or by holding your hand above the
 Crazyflie.
 
 For the example to run the following hardware is needed:
- * Crazyflie 2.0
- * Crazyradio PA
+ * Crazyflie platform
+ * Crazyradio
  * Flow deck
  * Multiranger deck
 """
