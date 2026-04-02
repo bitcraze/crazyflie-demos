@@ -4,7 +4,7 @@ Demonstrates reading, writing, and clearing persistent parameters on the Crazyfl
 
 ## What You Need
 
-- **Crazyflie platform** (with LED ring deck for the `ring.effect` parameter)
+- **Crazyflie platform**
 - **Crazyradio**
 
 ## Quick Start
@@ -29,7 +29,9 @@ The demo showcases:
 - Using `persistent_get_state`, `persistent_store`, and `persistent_clear` from the cflib parameter API
 - Blocking on async callbacks with `threading.Event`
 
-Note: this script changes the `ring.effect` parameter value on the connected Crazyflie.
+Note: This script changes the `ring.effect` parameter value on the connected Crazyflie.
+
+Note: You don't need the LED-ring deck to be attached for this example to work.
 
 ## Dependencies
 
