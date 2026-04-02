@@ -44,3 +44,6 @@ The demo showcases:
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
   - ref: 0.1.31
+- cfclient:
+  - repo: https://github.com/bitcraze/crazyflie-clients-python.git
+  - ref: 2025.12.1

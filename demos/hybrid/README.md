@@ -27,7 +27,7 @@ Flash the required firmware release using the [Crazyflie client](https://www.bit
 ### 3. Initialize the firmware submodule
 
 ```bash
-git submodule update --init app/crazyflie-firmware
+git submodule update --init --recursive app/crazyflie-firmware
 ```
 
 ### 4. Set up the Python environment
@@ -54,9 +54,10 @@ Activate the venv so `make cload` can find cfloader, then flash:
 
 ```bash
 source ../.venv/bin/activate
-make cload
-deactivate
+CLOAD_CMDS="-w [CRAZYFLIE_URI]" make cload
 ```
+
+Replace `[CRAZYFLIE_URI]` with your Crazyflie's URI (e.g. `radio://0/80/2M/E7E7E7E7E7`). For more details on flashing, see the [Crazyflie firmware flashing documentation](https://github.com/bitcraze/crazyflie-firmware/blob/master/docs/building-and-flashing/build.md#flashing).
 
 ### 7. Run the Python script
 
