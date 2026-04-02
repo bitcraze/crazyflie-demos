@@ -20,7 +20,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 """
-Example of how to read the memory from the multiranger
+Example of how to read the 8x8 ToF depth image from the VL53L5 sensor
+
+Note: The VL53L5 is NOT the sensor on the standard Multi-ranger deck (which
+uses VL53L1x single-point sensors). This demo requires a custom or
+hardware-modified deck that uses the VL53L5 ToF sensor.
 """
 import logging
 import time

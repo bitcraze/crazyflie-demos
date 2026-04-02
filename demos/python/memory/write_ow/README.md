@@ -6,6 +6,7 @@ Connects to the Crazyflie, writes test board name and revision values to the fir
 
 - **Crazyflie platform**
 - **Crazyradio**
+- **Any deck that has a 1-wire memory**
 
 ## Quick Start
 

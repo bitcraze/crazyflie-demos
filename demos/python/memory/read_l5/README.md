@@ -1,12 +1,14 @@
 # Read L5 (Multiranger ToF Image)
 
-Reads the 8x8 pixel ToF image from the Multi-ranger deck's VL53L5 sensor and displays it as a live grayscale heatmap using matplotlib.
+Reads the 8x8 pixel ToF image from the VL53L5 sensor and displays it as a live grayscale heatmap using matplotlib.
+
+> **Note:** The VL53L5 is **not** the sensor on the standard Multi-ranger deck (which uses VL53L1x single-point sensors). This demo requires a custom or hardware-modified deck that uses the VL53L5 ToF sensor.
 
 ## What You Need
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Multi-ranger deck** (with VL53L5 sensor)
+- **Custom/modified deck with VL53L5 sensor**
 
 ## Quick Start
 
@@ -32,8 +34,8 @@ The demo showcases:
 
 - firmware:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
-  - ref: 2025.12.1
+  - ref: 2025.02
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
-  - ref: 0.1.31
+  - ref: 0.1.28
 - extra: matplotlib

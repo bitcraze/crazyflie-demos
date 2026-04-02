@@ -1,12 +1,14 @@
 # Read PAA3905 (Flow Sensor Image)
 
-Reads the 35x35 pixel optical flow image from the PAA3905 sensor (Flow deck v2) and displays it as a live grayscale image using matplotlib.
+Reads the 35x35 pixel optical flow image from the PAA3905 sensor and displays it as a live grayscale image using matplotlib.
+
+> **Note:** The PAA3905 is **not** the sensor on the standard Flow deck v2 (which uses the PMW3901). This demo requires a custom or hardware-modified flow deck that uses the PAA3905 optical flow sensor.
 
 ## What You Need
 
 - **Crazyflie platform**
-- **USB connection** (default: `usb://0`)
-- **Flow deck v2** (with PAA3905 sensor)
+- **USB connection**
+- **Custom/modified flow deck with PAA3905 sensor**
 
 ## Quick Start
 

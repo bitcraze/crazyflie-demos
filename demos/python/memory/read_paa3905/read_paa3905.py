@@ -20,7 +20,11 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 """
-Example of how to read the memory from the multiranger
+Example of how to read the memory from the PAA3905 flow deck
+
+Note: The PAA3905 sensor is NOT the sensor on the standard Crazyflie Flow deck
+(which uses the PMW3901). You need a custom or modified flow deck that uses
+the PAA3905 optical flow sensor instead.
 """
 import logging
 import time

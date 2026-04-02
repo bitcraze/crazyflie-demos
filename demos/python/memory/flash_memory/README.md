@@ -6,7 +6,7 @@ Interactive script to read and overwrite vendor ID and memory ID fields in a DS2
 
 - **Crazyflie platform**
 - **Crazyradio**
-- A deck or board with a DS28E05 1-wire EEPROM
+- **Any deck that has a 1-wire memory**
 
 ## Quick Start
 

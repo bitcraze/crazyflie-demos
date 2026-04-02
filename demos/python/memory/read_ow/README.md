@@ -6,6 +6,7 @@ Connects to the Crazyflie, enumerates all 1-wire memories, and prints their cont
 
 - **Crazyflie platform**
 - **Crazyradio**
+- **Any deck that has a 1-wire memory**
 
 ## Quick Start
 
