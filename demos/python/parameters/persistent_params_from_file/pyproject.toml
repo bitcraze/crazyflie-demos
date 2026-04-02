@@ -5,4 +5,5 @@ description = "Reads a YAML file containing persistent parameter values and writ
 requires-python = ">=3.10"
 dependencies = [
     "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "pyyaml",
 ]
