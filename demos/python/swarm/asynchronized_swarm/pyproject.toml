@@ -1,0 +1,8 @@
+[project]
+name = "asynchronized-swarm"
+version = "0.1.0"
+description = "Flies two Crazyflies in an asynchronous choreography using the MotionCommander, with each drone executing a different time-based sequence while their positions are logged and printed."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

@@ -1,0 +1,8 @@
+[project]
+name = "write-ow"
+version = "0.1.0"
+description = "Connects to the Crazyflie, writes test board name and revision values to the first 1-wire memory found, then reads them back to verify."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

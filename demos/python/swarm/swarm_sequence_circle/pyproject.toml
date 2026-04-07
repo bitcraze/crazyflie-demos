@@ -1,0 +1,8 @@
+[project]
+name = "swarm-sequence-circle"
+version = "0.1.0"
+description = "Flies 5 Crazyflies in a formation where four drones orbit in a circle around a stationary center drone, using hover setpoints and a yaw rate to maintain circular flight."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

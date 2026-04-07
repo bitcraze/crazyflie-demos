@@ -1,0 +1,9 @@
+[project]
+name = "lighthouse-openvr-grab-color"
+version = "0.1.0"
+description = "Extends the OpenVR grab demo with LED ring color control: the controller touchpad maps its angle to a hue, allowing the user to change the LED ring color while flying."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "openvr",
+]

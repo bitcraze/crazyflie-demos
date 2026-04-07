@@ -1,0 +1,10 @@
+[project]
+name = "fpv"
+version = "0.1.0"
+description = "Fly the Crazyflie in first-person view using the AI deck camera with keyboard control, displaying live grayscale video and position telemetry in a GUI window."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "numpy",
+    "PyQt6",
+]

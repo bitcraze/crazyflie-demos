@@ -1,0 +1,8 @@
+[project]
+name = "persistent-params"
+version = "0.1.0"
+description = "Demonstrates reading, writing, and clearing persistent parameters on the Crazyflie — values stored in flash that survive a power cycle."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

@@ -1,0 +1,8 @@
+[project]
+name = "read-ow"
+version = "0.1.0"
+description = "Connects to the Crazyflie, enumerates all 1-wire memories, and prints their contents (address, type, size, valid, name, VID, PID, pins, and all elements)."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]
