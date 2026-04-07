@@ -4,10 +4,10 @@ Connects to a Crazyflie and uses it as a bridge to send reboot-to-bootloader com
 
 ## What You Need
 
-- **Crazyflie platform** with a Loco Positioning deck
+- **Crazyflie platform**
 - **Crazyradio**
-- **Loco Positioning System anchors** (DWM1000-based)
-- `lpslib` Python package
+- **Loco Positioning deck**
+- **Loco Positioning System anchors**
 
 ## Quick Start
 
