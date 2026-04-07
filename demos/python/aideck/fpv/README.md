@@ -4,9 +4,9 @@ Fly the Crazyflie in first-person view using the AI deck camera with keyboard co
 
 ## What You Need
 
-- **Crazyflie 2.1**
+- **Crazyflie platform**
 - **Crazyradio**
-- **Flow v2 deck**
+- **Flow deck**
 - **AI deck 1.1**
 
 ## Quick Start
@@ -27,7 +27,7 @@ When you run the demo:
 
 The demo showcases:
 - WiFi-based CPX communication with the AI deck
-- Simultaneous CRTP flight control over the same WiFi link
+- Simultaneous CRTP flight control
 - Real-time camera streaming from the AI deck
 
 ## Dependencies

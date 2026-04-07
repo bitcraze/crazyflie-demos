@@ -39,8 +39,8 @@ Crazyflie can then be controlled by using keyboard input:
 The demo is ended by closing the application.
 
 For the example to run the following hardware is needed:
- * Crazyflie 2.1
- * Crazyradio PA
+ * Crazyflie
+ * Crazyradio
  * Flow v2 deck
  * AI deck 1.1
 """
