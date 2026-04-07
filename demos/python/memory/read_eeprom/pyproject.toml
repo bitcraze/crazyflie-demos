@@ -1,0 +1,8 @@
+[project]
+name = "read-eeprom"
+version = "0.1.0"
+description = "Connects to the Crazyflie, reads all I2C EEPROM memories, and prints their contents (type, size, valid flag, and all elements)."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

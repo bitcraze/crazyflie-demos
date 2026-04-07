@@ -1,0 +1,11 @@
+[project]
+name = "lighthouse-config-visualization"
+version = "0.1.0"
+description = "Reads a lighthouse.yaml configuration file and renders a 3D matplotlib visualization of all base station positions, orientations, and coverage sectors."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "matplotlib",
+    "numpy",
+    "pyyaml",
+]

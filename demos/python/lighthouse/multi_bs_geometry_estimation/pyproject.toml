@@ -1,0 +1,10 @@
+[project]
+name = "multi-bs-geometry-estimation"
+version = "0.1.0"
+description = "Interactive script that guides you through recording Lighthouse sweep angle measurements from a hand-held Crazyflie and solves for the 3D geometry of 2 or more Lighthouse v2 base stations."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "matplotlib",
+    "numpy",
+]

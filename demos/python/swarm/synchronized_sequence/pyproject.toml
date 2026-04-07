@@ -1,0 +1,8 @@
+[project]
+name = "synchronized-sequence"
+version = "0.1.0"
+description = "Flies 3 Crazyflies in a tightly synchronized choreography where a central control thread dispatches time-stepped commands (Arm, Takeoff, Goto, Land, Ring) to individual drones via per-drone queues."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

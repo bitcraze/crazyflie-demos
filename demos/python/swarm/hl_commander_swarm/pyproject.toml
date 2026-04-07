@@ -1,0 +1,8 @@
+[project]
+name = "hl-commander-swarm"
+version = "0.1.0"
+description = "Flies a swarm of Crazyflies in a synchronous square choreography using the high level commander - all drones execute the same relative sequence in parallel."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

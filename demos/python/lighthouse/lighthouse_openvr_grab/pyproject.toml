@@ -1,0 +1,9 @@
+[project]
+name = "lighthouse-openvr-grab"
+version = "0.1.0"
+description = "Connects a Crazyflie to a SteamVR controller: the drone hovers 30 cm above the controller, and holding the trigger \"grabs\" it so you can move the drone by moving the controller."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "openvr",
+]

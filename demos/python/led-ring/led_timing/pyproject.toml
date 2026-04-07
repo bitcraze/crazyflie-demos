@@ -1,0 +1,8 @@
+[project]
+name = "led-timing"
+version = "0.1.0"
+description = "Programs a pre-defined LED animation sequence into the Crazyflie's LEDTIMING memory and plays it back autonomously using effect 17."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+]

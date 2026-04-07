@@ -1,0 +1,9 @@
+[project]
+name = "lps-reboot-to-bootloader"
+version = "0.1.0"
+description = "Connects to a Crazyflie and uses it as a bridge to send reboot-to-bootloader commands to 6 Loco Positioning System anchors (IDs 0-5), repeating each command 10 times for reliability."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "lpslib",
+]
