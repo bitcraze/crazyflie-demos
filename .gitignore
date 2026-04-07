@@ -1,4 +1,7 @@
 **/cache/
 **/.venv/
 **/uv.lock
+**/app/build/
+**/app/**/*.o
+**/app/**/*.cmd
 **/__pycache__/

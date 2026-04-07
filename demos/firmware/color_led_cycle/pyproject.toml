@@ -1,0 +1,8 @@
+[project]
+name = "color-led-cycle"
+version = "0.1.0"
+description = "Cycles the Color LED deck through smooth WRGB color transitions using a custom firmware app."
+requires-python = ">=3.10"
+dependencies = [
+    "cfclient @ git+https://github.com/bitcraze/crazyflie-clients-python.git@2025.12.1",
+]
