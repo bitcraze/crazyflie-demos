@@ -4,7 +4,7 @@ Scans all 126 radio channels (0–125), measures acknowledgement rate and RSSI f
 
 ## What You Need
 
-- **Crazyflie platform** (must be using default address `0xE7E7E7E7E7`)
+- **Crazyflie platform**
 - **Crazyradio**
 - Crazyflie nRF firmware built with `CFLAGS += -DRSSI_ACK_PACKET=1` in `config.mk` (for RSSI feedback)
 
