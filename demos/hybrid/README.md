@@ -1,12 +1,13 @@
 # Hybrid Demos
 
-Hybrid demos combine a custom out-of-tree firmware app with a Python script. The firmware app runs on the Crazyflie itself, while the Python script runs on your computer and communicates with it over radio.
+Hybrid demos combine a custom out-of-tree firmware app with a host-side script. The firmware app runs on the Crazyflie itself, while the script runs on your computer and communicates with it over radio.
 
 ## How It Works
 
 Each hybrid demo contains:
 
-- A Python script + `pyproject.toml` for the host-side code
+- A host-side script
+- A `pyproject.toml` for dependencies
 - An `app/` directory with the out-of-tree firmware app
 - A `crazyflie-firmware` git submodule inside `app/` — the firmware release used as the build base
 
@@ -27,16 +28,16 @@ Flash the required firmware release using the [Crazyflie client](https://www.bit
 ### 3. Initialize the firmware submodule
 
 ```bash
-git submodule update --init --recursive app/crazyflie-firmware
+git submodule update --init --recursive --depth 1 app/crazyflie-firmware
 ```
 
-### 4. Set up the Python environment
+### 4. Set up the environment
 
 ```bash
 uv sync
 ```
 
-This creates a `.venv` with cflib installed. The same venv is used for both flashing (cfloader) and running the Python script.
+This creates a `.venv` with cfloader (needed for flashing) and, for Python demos, the script's dependencies.
 
 ### 5. Build the custom firmware app
 
@@ -59,7 +60,9 @@ CLOAD_CMDS="-w [CRAZYFLIE_URI]" make cload
 
 Replace `[CRAZYFLIE_URI]` with your Crazyflie's URI (e.g. `radio://0/80/2M/E7E7E7E7E7`). For more details on flashing, see the [Crazyflie firmware flashing documentation](https://github.com/bitcraze/crazyflie-firmware/blob/master/docs/building-and-flashing/build.md#flashing).
 
-### 7. Run the Python script
+### 7. Run the script
+
+For Python demos:
 
 ```bash
 cd ..
