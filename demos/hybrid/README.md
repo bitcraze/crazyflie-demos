@@ -10,6 +10,7 @@ Each hybrid demo contains:
 - A `pyproject.toml` for dependencies
 - An `app/` directory with the out-of-tree firmware app
 - A `crazyflie-firmware` git submodule inside `app/` — the firmware release used as the build base
+- A `README.md` containing details about the demo
 
 The submodule is **not cloned automatically** when you clone the repo. You initialize it per-demo, so you only download what you need.
 
