@@ -1,6 +1,6 @@
 # Firmware Demos
 
-Firmware demos are custom out-of-tree firmware apps that run directly on the Crazyflie. Flashing is done via cfclient's cfloader, which is managed through a per-demo Python environment.
+Firmware demos run directly on the Crazyflie, no host-side script needed. Flashing is done via cfloader, which is managed through a per-demo Python environment.
 
 ## How It Works
 
@@ -8,7 +8,7 @@ Each firmware demo contains:
 
 - An `app/` directory with the out-of-tree firmware app
 - A `crazyflie-firmware` git submodule inside `app/` — the firmware release used as the build base
-- A `pyproject.toml` for the flashing environment (cfclient/cfloader)
+- A `pyproject.toml` for the flashing environment (cfloader)
 - A `README.md` containing details about the demo
 
 The submodule is **not cloned automatically** when you clone the repo. You initialize it per-demo, so you only download what you need.
@@ -37,7 +37,7 @@ git submodule update --init --recursive --depth 1 app/crazyflie-firmware
 uv sync
 ```
 
-This creates a `.venv` with cfclient installed, which provides the cfloader used for flashing.
+This creates a `.venv` with cfloader installed, which is used for flashing.
 
 ### 5. Build the custom firmware app
 
