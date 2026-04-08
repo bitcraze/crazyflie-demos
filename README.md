@@ -7,8 +7,8 @@ A collection of demos for the Crazyflie ecosystem.
 | Type | Location | Description |
 |------|----------|-------------|
 | Scripts | `demos/scripts/cflib` | Python scripts using [cflib](https://github.com/bitcraze/crazyflie-lib-python) |
-| Firmware | `demos/firmware/` | Custom out-of-tree firmware apps |
-| Hybrid | `demos/hybrid/` | Firmware apps combined with scripts |
+| Firmware | `demos/firmware/` | Custom firmware demos |
+| Hybrid | `demos/hybrid/` | Custom firmware combined with host-side scripts |
 
 Each demo is self-contained with its own dependencies and instructions in its `README.md`.
 
