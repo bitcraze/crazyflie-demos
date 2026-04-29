@@ -7,3 +7,6 @@
 [submodule "demos/firmware/generic_led_cycle/app/crazyflie-firmware"]
 	path = demos/firmware/generic_led_cycle/app/crazyflie-firmware
 	url = https://github.com/bitcraze/crazyflie-firmware.git
+[submodule "demos/firmware/color_led_effects/app/crazyflie-firmware"]
+	path = demos/firmware/color_led_effects/app/crazyflie-firmware
+	url = https://github.com/bitcraze/crazyflie-firmware.git

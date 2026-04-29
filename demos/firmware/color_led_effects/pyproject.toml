@@ -1,0 +1,8 @@
+[project]
+name = "color-led-effects"
+version = "0.1.0"
+description = "Multiple WRGB LED effects for the Color LED deck, selectable via the colorLED.effect parameter."
+requires-python = ">=3.10"
+dependencies = [
+    "cfclient @ git+https://github.com/bitcraze/crazyflie-clients-python.git@2026.4",
+]
