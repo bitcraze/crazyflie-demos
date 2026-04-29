@@ -65,3 +65,4 @@ Replace `[CRAZYFLIE_URI]` with your Crazyflie's URI (e.g. `radio://0/80/2M/E7E7E
 | Demo | Description |
 |------|-------------|
 | [color_led_cycle](color_led_cycle/README.md) | Cycles the Color LED deck through smooth WRGB color transitions |
+| [generic_led_cycle](generic_led_cycle/README.md) | Cycles any LED deck through smooth WRGB color transitions |

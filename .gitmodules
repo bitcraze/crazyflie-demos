@@ -4,3 +4,6 @@
 [submodule "demos/hybrid/christmas_tree/app/crazyflie-firmware"]
 	path = demos/hybrid/christmas_tree/app/crazyflie-firmware
 	url = https://github.com/bitcraze/crazyflie-firmware.git
+[submodule "demos/firmware/generic_led_cycle/app/crazyflie-firmware"]
+	path = demos/firmware/generic_led_cycle/app/crazyflie-firmware
+	url = https://github.com/bitcraze/crazyflie-firmware.git
