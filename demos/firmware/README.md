@@ -65,5 +65,7 @@ Replace `[CRAZYFLIE_URI]` with your Crazyflie's URI (e.g. `radio://0/80/2M/E7E7E
 | Demo | Description |
 |------|-------------|
 | [color_led_cycle](color_led_cycle/README.md) | Cycles the Color LED deck through smooth WRGB color transitions |
-| [generic_led_cycle](generic_led_cycle/README.md) | Cycles any LED deck through smooth WRGB color transitions |
 | [color_led_effects](color_led_effects/README.md) |  Introduces multiple WRGB LED effects for the Color LED deck |
+| [generic_led_cycle](generic_led_cycle/README.md) | Cycles any LED deck through smooth WRGB color transitions |
+| [multiranger_push](multiranger_push/README.md) | Hover and react to hand proximity - push the Crazyflie around using the Multiranger deck |
+| [multiranger_wall_following](multiranger_wall_following/README.md) | Autonomous wall following using the Multiranger and Flow deck |

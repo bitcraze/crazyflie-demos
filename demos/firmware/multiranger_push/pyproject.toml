@@ -1,0 +1,8 @@
+[project]
+name = "multiranger-push"
+version = "0.1.0"
+description = "Interactive push demo using the Multiranger and Flow deck."
+requires-python = ">=3.10"
+dependencies = [
+    "cfclient @ git+https://github.com/bitcraze/crazyflie-clients-python.git@2026.4",
+]

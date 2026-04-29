@@ -1,0 +1,8 @@
+[project]
+name = "multiranger-wall-following"
+version = "0.1.0"
+description = "Autonomous wall-following demo using the Multiranger and Flow deck."
+requires-python = ">=3.10"
+dependencies = [
+    "cfclient @ git+https://github.com/bitcraze/crazyflie-clients-python.git@2026.4",
+]
