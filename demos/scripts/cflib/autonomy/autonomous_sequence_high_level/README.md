@@ -37,9 +37,3 @@ The demo showcases:
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
   - ref: 0.1.31
-
-
-## Learn More
-
-- [High Level Commander documentation](https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/functional-areas/high-level-commander/)
-- [Autonomous flight tutorial](https://www.bitcraze.io/documentation/repository/crazyflie-lib-python/master/user-guides/sbs_motion_commander/)
