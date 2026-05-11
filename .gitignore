@@ -1,7 +1,11 @@
 **/cache/
+**/target/
 **/.venv/
 **/uv.lock
 **/app/build/
 **/app/**/*.o
 **/app/**/*.cmd
 **/__pycache__/
+
+#vscode config folder
+.vscode/
