@@ -74,4 +74,5 @@ uv run <script>.py
 
 | Demo | Description |
 |------|-------------|
+| [appchannel_test](appchannel_test/README.md) | Sends three floats to the Crazyflie over the appchannel and receives their sum back |
 | [christmas_tree](christmas_tree/README.md) | 8 Crazyflies flying a spiral Christmas tree choreography with position-based LED effects |

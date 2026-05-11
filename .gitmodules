@@ -16,3 +16,6 @@
 [submodule "demos/firmware/multiranger_push/app/crazyflie-firmware"]
 	path = demos/firmware/multiranger_push/app/crazyflie-firmware
 	url = https://github.com/bitcraze/crazyflie-firmware.git
+[submodule "demos/hybrid/appchannel_test/app/crazyflie-firmware"]
+	path = demos/hybrid/appchannel_test/app/crazyflie-firmware
+	url = https://github.com/bitcraze/crazyflie-firmware.git
