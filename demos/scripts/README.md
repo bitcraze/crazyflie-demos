@@ -7,6 +7,7 @@ Host-side scripts that communicate with a Crazyflie over radio. Each script runs
 | Category | Language / Library | Description |
 |----------|--------------------|-------------|
 | [cflib](cflib/) | Python / [crazyflie-lib-python](https://github.com/bitcraze/crazyflie-lib-python) | Broad Python library covering the full Crazyflie API with many examples |
+| [cflib2](cflib2/) | Python / [crazyflie-lib-python-v2](https://github.com/bitcraze/crazyflie-lib-python-v2) | High-performance Python library built on top of [crazyflie-lib-rs](https://github.com/bitcraze/crazyflie-lib-rs) with an async-first API |
 | [rust](rust/) | Rust / [crazyflie-lib-rs](https://github.com/bitcraze/crazyflie-lib-rs) | High-performance Rust alternative with a focused API and async support |
 
 ## Firmware Prerequisite
