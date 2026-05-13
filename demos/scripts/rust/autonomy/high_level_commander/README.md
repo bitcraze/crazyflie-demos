@@ -6,7 +6,7 @@ Demonstrates autonomous flight using the high-level commander: take off, move to
 
 - **Crazyflie platform**
 - **Crazyradio**
-- **Positioning system**
+- **Flow deck v2 or Positioning system**
 
 ## Quick Start
 
@@ -33,9 +33,9 @@ The demo shows a resilient error-handling pattern: individual command failures a
 - firmware:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
   - ref: 2026.04
-- crazyflie-lib-rs
+- crazyflie-lib-rs:
   - repo: https://github.com/bitcraze/crazyflie-lib-rs.git
   - ref: 0.7.0
-- crazyflie-link-rs
+- crazyflie-link-rs:
   - repo: https://github.com/bitcraze/crazyflie-link-rs.git
   - ref: 0.4.3

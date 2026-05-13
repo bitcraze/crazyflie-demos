@@ -11,4 +11,4 @@ Host-side scripts that communicate with a Crazyflie over radio. Each script runs
 
 ## Firmware Prerequisite
 
-Each script run against a **Crazyflie firmware release** listed in its README under **Dependencies**. Flash the official release using [cfclient](https://github.com/bitcraze/crazyflie-clients-python) before running any script.
+Each script runs against a **Crazyflie firmware release** listed in its README under **Dependencies**. Flash the official release using [cfclient](https://github.com/bitcraze/crazyflie-clients-python) before running any script.
