@@ -1,0 +1,8 @@
+# Cargo workspace grouping all Rust demos. Each demo is its own package with its
+# own Cargo.toml but this file lets cargo and rust-analyzer discover them all from
+# one place. Run demos from their own directory: cd <category>/<demo> && cargo run
+[workspace]
+members = [
+    "autonomy/high_level_commander",
+]
+resolver = "2"
