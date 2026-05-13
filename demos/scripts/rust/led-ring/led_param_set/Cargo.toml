@@ -1,0 +1,15 @@
+[package]
+name = "led-param-set"
+version = "0.1.0"
+edition = "2021"
+description = "LED ring demo setting parameters with crazyflie-lib-rs"
+publish = false
+
+[[bin]]
+name = "led_param_set"
+path = "led_param_set.rs"
+
+[dependencies]
+crazyflie-lib  = "0.7.0"
+crazyflie-link = "0.4.3"
+tokio          = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
