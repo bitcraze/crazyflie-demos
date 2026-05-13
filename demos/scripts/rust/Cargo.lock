@@ -118,6 +118,29 @@ dependencies = [
 
 [[package]]
 name = "crazyflie-lib"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b6fc2cb8f0c7a428e980d9abe632f1263da4cb2d6acf83f1855e69d4cdb28cb8"
+dependencies = [
+ "async-broadcast",
+ "async-stream",
+ "async-trait",
+ "crazyflie-link",
+ "crc32fast",
+ "flume",
+ "futures",
+ "futures-util",
+ "half",
+ "hex",
+ "libc",
+ "num_enum",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
+name = "crazyflie-lib"
 version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "69d54f64d51934a7f2941df5f98efb858fb68ed1e075c1b6f164e50598825279"
@@ -442,7 +465,7 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 name = "high-level-commander"
 version = "0.1.0"
 dependencies = [
- "crazyflie-lib",
+ "crazyflie-lib 0.6.0",
  "crazyflie-link",
  "tokio",
 ]

@@ -10,6 +10,6 @@ name = "high_level_commander"
 path = "high_level_commander.rs"
 
 [dependencies]
-crazyflie-lib  = "0.7.0"
+crazyflie-lib  = "0.6.0"
 crazyflie-link = "0.4.3"
 tokio          = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
