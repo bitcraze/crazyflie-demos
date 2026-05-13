@@ -1,0 +1,15 @@
+[package]
+name = "led-mem-set"
+version = "0.1.0"
+edition = "2021"
+description = "LED ring demo using LED driver memory with crazyflie-lib-rs"
+publish = false
+
+[[bin]]
+name = "led_mem_set"
+path = "led_mem_set.rs"
+
+[dependencies]
+crazyflie-lib  = "0.7.0"
+crazyflie-link = "0.4.3"
+tokio          = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
