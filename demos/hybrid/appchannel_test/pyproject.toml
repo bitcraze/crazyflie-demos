@@ -1,0 +1,9 @@
+[project]
+name = "appchannel-test"
+version = "0.1.0"
+description = "Demonstrates the appchannel API: sends three floats to the Crazyflie and receives their sum back."
+requires-python = ">=3.10"
+dependencies = [
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.32",
+    "cfclient @ git+https://github.com/bitcraze/crazyflie-clients-python.git@2026.4",
+]
