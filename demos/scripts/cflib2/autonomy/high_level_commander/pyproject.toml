@@ -5,4 +5,5 @@ description = "Flies a sequence of positions using the high-level commander, pow
 requires-python = ">=3.11"
 dependencies = [
     "cflib2 @ git+https://github.com/bitcraze/crazyflie-lib-python-v2.git@329bd2cb6b21ccecce0396926887743c148a6bd6",
+    "tyro>=1.0.8",
 ]
