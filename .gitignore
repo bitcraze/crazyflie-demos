@@ -6,6 +6,7 @@
 **/app/**/*.o
 **/app/**/*.cmd
 **/__pycache__/
+*.egg-info/
 
 #vscode config folder
 .vscode/
