@@ -24,15 +24,19 @@ cd demos/hybrid/<demo_name>
 
 ### 2. Flash the release firmware (if needed)
 
-Flash the required firmware release using the [Crazyflie client](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/#firmware-upgrade) to ensure the nRF and deck firmwares are up to date. The required release version is listed in each demo's README under **Dependencies**.
+Flash the required firmware release using the [Crazyflie client](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/#firmware-upgrade) to ensure the nRF and deck firmwares match the version required by the demo. The required release version is listed in each demo's README under **Dependencies**.
 
 ### 3. Initialize the firmware submodule
+
+Each demo includes the crazyflie-firmware as a submodule, which provides the build system and platform support needed to compile the app. Run this from the demo's root directory to fetch it:
 
 ```bash
 git submodule update --init --recursive --depth 1 app/crazyflie-firmware
 ```
 
-### 4. Set up the environment
+### 4. Set up the **Python** environment
+
+This project uses [uv](https://docs.astral.sh/uv/) for Python dependency management. If you don't have it installed, follow the [installation instructions](https://docs.astral.sh/uv/getting-started/installation/).
 
 ```bash
 uv sync
@@ -61,7 +65,9 @@ CLOAD_CMDS="-w [CRAZYFLIE_URI]" make cload
 
 Replace `[CRAZYFLIE_URI]` with your Crazyflie's URI (e.g. `radio://0/80/2M/E7E7E7E7E7`). For more details on flashing, see the [Crazyflie firmware flashing documentation](https://github.com/bitcraze/crazyflie-firmware/blob/master/docs/building-and-flashing/build.md#flashing).
 
-### 7. Run the script
+### 7. Run the **Python** script
+
+Before running, check the demo's own README for any required configuration. You may need to update values such as the Crazyflie URI or other settings directly in the Python script.
 
 For Python demos:
 
