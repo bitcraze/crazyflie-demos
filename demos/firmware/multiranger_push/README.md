@@ -8,11 +8,15 @@ Interactive hovering demo using the Multiranger and Flow deck v2. The Crazyflie 
 - **Multiranger deck**
 - **Flow deck v2**
 
+## Setup
+
+Follow the general firmware demo instructions in the [firmware demos README](../README.md).
+
 ## How It Works
 
 Activation and stopping are proximity-based using the top range sensor:
 
-1. Place a hand close (< 10 cm) on **top** of the Crazyflie
+1. Place a hand close (< 10 cm) **to the top** of the Crazyflie
 2. Remove the hand - the Crazyflie takes off and hovers at 0.2 m
 3. Place a hand close to the **top** again (or push it below 10 cm) to land
 

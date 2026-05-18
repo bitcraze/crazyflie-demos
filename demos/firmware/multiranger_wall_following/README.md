@@ -11,6 +11,10 @@ Based on the minimal navigation solution described in:
 - **Multiranger deck**
 - **Flow deck v2**
 
+## Setup
+
+Follow the general firmware demo instructions in the [firmware demos README](../README.md).
+
 ## How It Works
 
 Activation and stopping are proximity-based using the top range sensor:
@@ -23,6 +27,8 @@ While flying, the Crazyflie maintains a set distance from the nearest wall and n
 
 ## Parameters
 
+Parameters can be changed at runtime using the [Crazyflie client](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/) parameter tab, or via the [cflib](https://www.bitcraze.io/documentation/repository/crazyflie-lib-python/master/) Python API.
+
 | Parameter | Type | Default | Description |
 |-----------|------|---------|-------------|
 | `app.goLeft` | uint8 | 0 | Follow wall on the left (1) or right (0) |
@@ -30,6 +36,8 @@ While flying, the Crazyflie maintains a set distance from the nearest wall and n
 | `app.maxSpeed` | float | 0.5 m/s | Maximum forward speed |
 
 ## Log Variables
+
+Log variables can be monitored in real time using the [Crazyflie client](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/) log tab, or streamed via the [cflib](https://www.bitcraze.io/documentation/repository/crazyflie-lib-python/master/) Python API.
 
 | Variable | Description |
 |----------|-------------|
