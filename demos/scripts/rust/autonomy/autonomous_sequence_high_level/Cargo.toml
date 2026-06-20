@@ -1,0 +1,15 @@
+[package]
+name = "autonomous-sequence-high-level"
+version = "0.1.0"
+edition = "2021"
+description = "Figure-8 trajectory demo using uncompressed Poly4D upload and the high-level commander"
+publish = false
+
+[[bin]]
+name = "autonomous_sequence_high_level"
+path = "autonomous_sequence_high_level.rs"
+
+[dependencies]
+crazyflie-lib  = "0.7.0"
+crazyflie-link = "0.4.3"
+tokio          = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
