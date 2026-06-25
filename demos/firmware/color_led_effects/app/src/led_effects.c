@@ -79,6 +79,10 @@ static uint32_t prevWrgbTop = 0xFFFFFFFF;
 #define FADE_PERIOD_MS 2000
 //------------------------------------------------
 
+//----------------Effect6: Shake-----------------
+#define SHAKE_MAX_RATE 512
+//------------------------------------------------
+
 //----------------Effect5: Flicker---------------
 #define COLOR_GOLD WRGB(0, 255, 156, 0)
 // Define limits for off duration (in ms)
@@ -374,6 +378,52 @@ void appMain()
 
         if (topAttached)    updateDeckParamIfChanged(idWrgbTop, wrgb_top, &prevWrgbTop);
         if (bottomAttached) updateDeckParamIfChanged(idWrgbBot, wrgb_bot, &prevWrgbBot);
+    } else if (effect == 6)
+    {
+        //---------------------------------------------------------
+        // SHAKE — gyro axes mapped to R/G/B
+        //---------------------------------------------------------
+        static logVarId_t gyroXid, gyroYid, gyroZid;
+        static bool gyroInitialized = false;
+
+        if (!gyroInitialized) {
+            gyroXid = logGetVarId("gyro", "x");
+            gyroYid = logGetVarId("gyro", "y");
+            gyroZid = logGetVarId("gyro", "z");
+            gyroInitialized = true;
+        }
+
+        int gyroX = (int)logGetFloat(gyroXid);
+        int gyroY = (int)logGetFloat(gyroYid);
+        int gyroZ = (int)logGetFloat(gyroZid);
+
+        // Clamp to [-SHAKE_MAX_RATE, SHAKE_MAX_RATE]
+        if (gyroX >  SHAKE_MAX_RATE) gyroX =  SHAKE_MAX_RATE;
+        if (gyroX < -SHAKE_MAX_RATE) gyroX = -SHAKE_MAX_RATE;
+        if (gyroY >  SHAKE_MAX_RATE) gyroY =  SHAKE_MAX_RATE;
+        if (gyroY < -SHAKE_MAX_RATE) gyroY = -SHAKE_MAX_RATE;
+        if (gyroZ >  SHAKE_MAX_RATE) gyroZ =  SHAKE_MAX_RATE;
+        if (gyroZ < -SHAKE_MAX_RATE) gyroZ = -SHAKE_MAX_RATE;
+
+        // Absolute value, halve to bring into 0-255 range
+        gyroX = (gyroX < 0 ? -gyroX : gyroX) / 2;
+        gyroY = (gyroY < 0 ? -gyroY : gyroY) / 2;
+        gyroZ = (gyroZ < 0 ? -gyroZ : gyroZ) / 2;
+
+        // Deadband: suppress low-noise jitter
+        if (gyroX < 5) gyroX = 0;
+        if (gyroY < 5) gyroY = 0;
+        if (gyroZ < 5) gyroZ = 0;
+
+        // Clamp to valid uint8 range
+        if (gyroX > 255) gyroX = 255;
+        if (gyroY > 255) gyroY = 255;
+        if (gyroZ > 255) gyroZ = 255;
+
+        uint32_t wrgb_value = WRGB(0, (uint8_t)gyroZ, (uint8_t)gyroY, (uint8_t)gyroX);
+
+        if (bottomAttached) updateDeckParamIfChanged(idWrgbBot, wrgb_value, &prevWrgbBot);
+        if (topAttached)    updateDeckParamIfChanged(idWrgbTop, wrgb_value, &prevWrgbTop);
     }
     else
     {
