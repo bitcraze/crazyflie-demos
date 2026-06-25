@@ -37,7 +37,8 @@
 #include "log.h"
 #include "param.h"
 
-#define DEBUG_MODULE "LEDSHAKE"
+#define DEBUG_MODULE "LEDTILT"
+#define PI_F 3.14159265f
 
 // Pack WRGB into 0xWWRRGGBB
 #define WRGB(w, r, g, b)  ( ((uint32_t)(w) << 24) | ((uint32_t)(r) << 16) | ((uint32_t)(g) << 8) | (uint32_t)(b) )
@@ -60,7 +61,7 @@ static void updateDeckParamIfChanged(paramVarId_t id, uint32_t newValue, uint32_
 
 void appMain()
 {
-    DEBUG_PRINT("Starting shake LED app...\n");
+    DEBUG_PRINT("Starting tilt LED app...\n");
 
     // Detect LED decks
     paramVarId_t idBottomDetect = paramGetVarId("deck", "bcColorLedBot");
@@ -134,8 +135,8 @@ void appMain()
         int r = 0, g = 0, b = 0;
         if (mag > 0.01f) {
             float angle = atan2f(fwd, rf);
-            if (angle < 0.0f) angle += 2.0f * 3.14159265f;
-            float hue = angle / (2.0f * 3.14159265f) * 6.0f - 1.0f;
+            if (angle < 0.0f) angle += 2.0f * PI_F;
+            float hue = angle / (2.0f * PI_F) * 6.0f - 1.0f;
             if (hue < 0.0f) hue += 6.0f;
             int sector = (int)hue;
             float f = hue - (float)sector;
@@ -156,16 +157,16 @@ void appMain()
 
         // When moving, latch the color at full brightness; when still, hold it
         if (wrgb_value != 0) {
-            uint8_t r = (wrgb_value >> 16) & 0xFF;
-            uint8_t g = (wrgb_value >>  8) & 0xFF;
-            uint8_t b =  wrgb_value        & 0xFF;
-            uint8_t mx = r > g ? (r > b ? r : b) : (g > b ? g : b);
+            uint8_t nr = (wrgb_value >> 16) & 0xFF;
+            uint8_t ng = (wrgb_value >>  8) & 0xFF;
+            uint8_t nb =  wrgb_value        & 0xFF;
+            uint8_t mx = nr > ng ? (nr > nb ? nr : nb) : (ng > nb ? ng : nb);
             if (mx > 0) {
-                r = (uint8_t)((uint16_t)r * 255 / mx);
-                g = (uint8_t)((uint16_t)g * 255 / mx);
-                b = (uint8_t)((uint16_t)b * 255 / mx);
+                nr = (uint8_t)((uint16_t)nr * 255 / mx);
+                ng = (uint8_t)((uint16_t)ng * 255 / mx);
+                nb = (uint8_t)((uint16_t)nb * 255 / mx);
             }
-            lastColor = WRGB(0, r, g, b);
+            lastColor = WRGB(0, nr, ng, nb);
         }
         // Lerp display toward target (~15% per tick at 10ms = ~60ms to settle)
         float tR = (float)((lastColor >> 16) & 0xFF);
