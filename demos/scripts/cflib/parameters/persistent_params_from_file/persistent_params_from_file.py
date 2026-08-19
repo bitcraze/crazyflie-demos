@@ -47,7 +47,8 @@ logging.basicConfig(level=logging.ERROR)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--file', type=str, help='The yaml file containing the arguments. ')
+    parser.add_argument('-f', '--file', type=str, default='params.yaml',
+                         help='The yaml file containing the arguments. (default: params.yaml)')
     args = parser.parse_args()
 
     cflib.crtp.init_drivers()
