@@ -4,5 +4,5 @@ version = "0.1.0"
 description = "Flies a figure-8 trajectory using the high level commander with a compressed polynomial trajectory uploaded to the Crazyflie's memory."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
 ]

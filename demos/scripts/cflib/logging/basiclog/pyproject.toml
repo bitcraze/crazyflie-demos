@@ -1,8 +1,0 @@
-[project]
-name = "basiclog"
-version = "0.1.0"
-description = "Connects to the Crazyflie using the asynchronous callback API, logs stabilizer and position estimates at 100 ms intervals, prints them to the console, and automatically disconnects after 5 seconds."
-requires-python = ">=3.10"
-dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-]

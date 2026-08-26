@@ -27,7 +27,7 @@ The demo showcases:
 
 - firmware:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
-  - ref: 2025.12.1
+  - ref: 2026.08
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
-  - ref: 0.1.31
+  - ref: 0.1.33

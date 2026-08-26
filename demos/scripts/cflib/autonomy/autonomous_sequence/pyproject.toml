@@ -1,8 +1,0 @@
-[project]
-name = "autonomous-sequence"
-version = "0.1.0"
-description = "Flies a predefined sequence of absolute position setpoints using the low-level position commander."
-requires-python = ">=3.10"
-dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-]

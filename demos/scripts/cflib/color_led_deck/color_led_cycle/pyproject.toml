@@ -4,5 +4,5 @@ version = "0.1.0"
 description = "Continuously cycles through all hues on the Color LED deck by converting HSV colors to WRGB and writing them via the wrgb8888 parameter."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
 ]
