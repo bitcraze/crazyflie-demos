@@ -4,5 +4,5 @@ version = "0.1.0"
 description = "Connects to a Crazyflie, ramps the motors up and down, then disconnects."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
 ]

@@ -4,6 +4,6 @@ version = "0.1.0"
 description = "Connects to a motion capture system and feeds pose data to a Crazyflie, then uploads and flies a figure-8 trajectory using the high level commander."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
     "motioncapture",
 ]
