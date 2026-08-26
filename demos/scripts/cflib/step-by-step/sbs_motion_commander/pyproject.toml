@@ -1,8 +1,0 @@
-[project]
-name = "sbs-motion-commander"
-version = "0.1.0"
-description = "A step-by-step tutorial demonstrating three flight modes with the MotionCommander: simple take-off/hover, linear movement, and position-bounded flight."
-requires-python = ">=3.10"
-dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-]
