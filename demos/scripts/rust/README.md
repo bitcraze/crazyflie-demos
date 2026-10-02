@@ -20,11 +20,3 @@ cargo run
 ```
 
 Cargo fetches dependencies, compiles, and runs the binary. On subsequent runs it reuses the build cache.
-
-## Demos
-
-### autonomy
-
-| Demo | Description |
-|------|-------------|
-| [high_level_commander](autonomy/high_level_commander/) | Take off, move to waypoints, fly a spiral, and land using the high-level commander |

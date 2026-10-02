@@ -4,5 +4,9 @@
 [workspace]
 members = [
     "autonomy/high_level_commander",
+    "autonomy/autonomous_sequence_high_level",
+    "autonomy/autonomous_sequence_high_level_compressed",
+    "led-ring/led_mem_set",
+    "led-ring/led_param_set",
 ]
 resolver = "2"
