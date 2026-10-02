@@ -4,5 +4,5 @@ version = "0.1.0"
 description = "Scans all radio interfaces for Crazyflies with the default address and prints their URIs."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
 ]

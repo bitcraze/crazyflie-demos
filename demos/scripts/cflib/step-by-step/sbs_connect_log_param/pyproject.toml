@@ -1,8 +1,0 @@
-[project]
-name = "sbs-connect-log-param"
-version = "0.1.0"
-description = "A step-by-step tutorial script demonstrating the three most fundamental cflib operations: connecting to a Crazyflie, reading log data, and setting parameters."
-requires-python = ">=3.10"
-dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
-]

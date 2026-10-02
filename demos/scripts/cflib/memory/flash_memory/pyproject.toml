@@ -4,5 +4,5 @@ version = "0.1.0"
 description = "Interactive script to read and overwrite vendor ID and memory ID fields in a DS28E05 1-wire EEPROM attached to the Crazyflie."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
 ]

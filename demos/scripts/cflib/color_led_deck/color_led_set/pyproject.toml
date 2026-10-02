@@ -4,5 +4,5 @@ version = "0.1.0"
 description = "Sets a static color on the Color LED deck using the WRGB wrgb8888 parameter, with optional auto white-channel extraction."
 requires-python = ">=3.10"
 dependencies = [
-    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.31",
+    "cflib @ git+https://github.com/bitcraze/crazyflie-lib-python.git@0.1.33",
 ]

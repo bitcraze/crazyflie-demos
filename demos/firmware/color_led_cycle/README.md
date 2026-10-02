@@ -36,7 +36,7 @@ Each color transition takes approximately 768ms (256 steps × 3ms per step), res
 
 - firmware:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
-  - ref: 2025.12.1
+  - ref: 2026.08
 - cfclient:
   - repo: https://github.com/bitcraze/crazyflie-clients-python.git
-  - ref: 2025.12.1
+  - ref: 2026.8
