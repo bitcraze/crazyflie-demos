@@ -1,4 +1,4 @@
-const URI: &str = "radio://0/55/2M/BADC0DE013";
+const URI: &str = "radio://0/80/2M/E7E7E7E7E7";
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
