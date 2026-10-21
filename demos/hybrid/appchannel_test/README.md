@@ -34,7 +34,7 @@ The custom firmware runs on the Crazyflie and waits for incoming appchannel pack
 
 - Firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
-  - ref: 2026.06
+  - ref: 2026.04
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
   - ref: 0.1.32
