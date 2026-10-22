@@ -28,7 +28,7 @@ Once hovering, each side sensor repels the drone:
 
 ## Dependencies
 
-- Firmware build dependency:
+- firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
   - ref: 2026.08
 - cfclient:

@@ -49,7 +49,7 @@ The **generic LED API** (`led_deck_ctrl.rgb888` parameter):
 
 ## Dependencies
 
-- Firmware build dependency:
+- firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
   - ref: 2026.08
 - cfclient:

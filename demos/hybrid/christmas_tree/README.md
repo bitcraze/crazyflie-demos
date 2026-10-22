@@ -38,7 +38,7 @@ The demo showcases:
 
 ## Dependencies
 
-- Firmware build dependency:
+- firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
   - ref: 2025.12.1
 - cflib:
