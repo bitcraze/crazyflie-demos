@@ -22,7 +22,7 @@ The submodule is **not cloned automatically** when you clone the repo. You initi
 cd demos/hybrid/<demo_name>
 ```
 
-### 2. Flash the release firmware (if needed)
+### 2. Flash the release firmware
 
 Flash the required firmware release using the [Crazyflie client](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/#firmware-upgrade) to ensure the nRF and deck firmwares match the version required by the demo. The required release version is listed in each demo's README under **Dependencies**.
 

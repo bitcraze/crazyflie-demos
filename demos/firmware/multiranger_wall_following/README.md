@@ -49,7 +49,7 @@ Log variables can be monitored in real time using the [Crazyflie client](https:/
 
 ## Dependencies
 
-- firmware:
+- firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
   - ref: 2026.08
 - cfclient:

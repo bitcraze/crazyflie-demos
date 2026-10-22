@@ -38,9 +38,9 @@ The demo showcases:
 
 ## Dependencies
 
-- firmware:
+- firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
-  - ref: 2025.12.1 (base release + `app/` out-of-tree app built on top)
+  - ref: 2025.12.1
 - cflib:
   - repo: https://github.com/bitcraze/crazyflie-lib-python.git
   - ref: 0.1.31

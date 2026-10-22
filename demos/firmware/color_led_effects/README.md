@@ -34,7 +34,7 @@ Switch between effects using the `colorLED.effect` parameter (e.g. via cfclient 
 
 ## Dependencies
 
-- firmware:
+- firmware build dependency:
   - repo: https://github.com/bitcraze/crazyflie-firmware.git
   - ref: 2026.08
 - cfclient:
